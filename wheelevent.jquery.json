@@ -1,0 +1,27 @@
+{
+    "name": "dichotomy",
+    "title": "jQuery Dichotomy",
+    "description": "jQuery Dichotomy is fresh images gallery plugin.",
+    "keywords": [
+        "image",
+        "slideshow",
+        "gallery"
+    ],
+    "version": "0.6.3",
+    "author": {
+        "name": "Vladimir Shelmuk",
+        "url": "http://shvlv.github.com/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "homepage": "https://github.com/shvlv/jquery-dichotomy",
+    "docs": "https://github.com/shvlv/jquery-dichotomy",
+    "dependencies": {
+        "jquery": ">=1.8.3"
+    },
+    "demo" : "http://shvlv.github.com/dichotomy.html"
+}
