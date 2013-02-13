@@ -1,19 +1,23 @@
 ## jQuery WheelEvent Plugin
 
 Plugin for cross-browser add mouse `wheel` event handler to any DOM element.
+
 About `wheel` event: [MDN](https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/wheel)
 
 ### Usage
 
 You can add handler through jquery `on` methods.
+   
      $('.class').on('wheel', handler)
 
 Or use short plugin methods.
-    $('.class').wheel(handler)
+  
+     $('.class').wheel(handler)
 
 Standardized event passed to handler have properties `deltaX`, `deltaY`, `deltaZ`, `deltaMode`.
+    
      $('.class').on('wheel', function(event) {
-     // Scroll line or pixel.
+     // get scroll line or pixel.
      var delta = event.deltaY;
      if (delta > 0) {
      // do something if wheel scroll up
