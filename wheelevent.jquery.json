@@ -1,5 +1,5 @@
 {
-    "name": "WheelEvent",
+    "name": "wheelevent",
     "title": "WheelEvent Plugin",
     "description": "Allow cross-browser attach mouse wheel event handler",
     "keywords": [
