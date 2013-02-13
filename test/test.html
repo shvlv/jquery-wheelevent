@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WheelEvent Test</title>
+    <link rel="stylesheet" href="qunit/qunit-git.css">
+    <style type="text/css">
+        body {
+            line-height: 10px;
+            font-size: 5px;
+        }
+        .mouse {
+            height: 5em;
+            margin: 1em 0;
+        }
+        #mouse-top {
+            background: lightgreen;
+        }
+        #mouse-bottom {
+            background: red;
+        }
+        #mouse-off{
+            background: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+
+<div id="mouse-top" class="mouse">
+   First: Scroll mouse wheel on this div to top
+</div>
+<div id="mouse-bottom" class="mouse">
+    Second:  Scroll mouse wheel on this div to bottom
+</div>
+<div id="mouse-off" class="mouse">
+    Remove event
+</div>
+
+
+
+<script type="text/javascript" src="../jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../jquery.wheelevent.js"></script>
+<script type="text/javascript" src="qunit/qunit-git.js"></script>
+<script type="text/javascript" src="test.js"></script>
+</body>
+</html>
