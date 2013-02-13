@@ -36,6 +36,6 @@ Tested with jQuery 1.9.1 and next browser on Windows
 * Safari 5.1.7
 * Firefox 17
 
-Please issue about find bug with other browser or platform.
+Please tell about find issue with other browser or platform.
 
 
