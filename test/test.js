@@ -1,13 +1,19 @@
 asyncTest('Wheel', function() {
     var eventProps = ["deltaX", "deltaY", "deltaZ", "deltaMode"],
-    wheelTop, wheelBottom;
+    wheelTop, wheelBottom, wheelOff;
 
 
     $('#mouse-top').on('wheel', function(event) {
         wheelTop = event;
         logProp(wheelTop);
+        $('#mouse-off').trigger('wheel');
         $(this).remove();
     });
+
+    $('#mouse-off').on('wheel', function(e){
+        alert('Wheel!');
+        wheelOff = e;
+    }).off('wheel');
 
     $('#mouse-bottom').wheel(function(event) {
         var $this = $(this);
@@ -29,12 +35,12 @@ asyncTest('Wheel', function() {
         strictEqual(wheelBottom.deltaZ, 0, 'deltaZ is 0');
         strictEqual(wheelBottom.deltaMode, 1, 'deltaMode is 0');
 
+        strictEqual(wheelOff, undefined, 'remove event');
+
         start();
     });
 
-$('#mouse-off').on('wheel', function(e){
-    alert('Wheel!')
-}).off('wheel');
+
 
     function logProp(event) {
         $.each(eventProps, function(i, prop) {
