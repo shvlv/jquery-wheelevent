@@ -7,7 +7,7 @@
         "wheel",
         "mousewheel"
     ],
-    "version": "0.7.0",
+    "version": "0.7.2",
     "author": {
         "name": "Vladimir Shelmuk",
         "url": "http://shvlv.github.com/"
